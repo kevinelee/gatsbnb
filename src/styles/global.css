@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.z-negative {
+  z-index: -10;
+}
+
+.flex-basis-25{
+  flex-basis: 25%;
+}
