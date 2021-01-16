@@ -1,8 +1,7 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
-  // const [isExpanded, toggleExpansion] = useState(false);
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -12,13 +11,27 @@ function Header() {
       }
     }
   `);
+  site ? null : null;
+  // const [isExpanded, toggleExpansion] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
-  if (!site) {
-    return null;
-  }
+  const changeBackground = () => {
+    // window.scrollY >= 120 ? setNavbar(true) : setNavbar(false);
+    if (window.scrollY >= 60) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+    console.log(window.scrollY);
+  };
+
+  window.addEventListener("scroll", changeBackground);
 
   return (
-    <header className="bg-opacity-0 z-50 shadow">
+    <header
+      className={`ease-in-out sticky top-0 z-50 fade-in
+        ${navbar ? "bg-gray-500 " : "bg-opacity-0  "}`}
+    >
       <div className="px-4 flex flex-wrap items-center justify-between max-full py-6 mx-auto max-w-7xl">
         <Link to="/">
           <h1 className="flex items-center text-black no-underline">
