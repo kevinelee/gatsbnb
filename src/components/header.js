@@ -29,11 +29,8 @@ function Header() {
 
   return (
     <header
-      className={
-        navbar
-          ? "bg-gray-500 z-50 top-0 sticky top-0"
-          : "bg-opacity-0 z-50 sticky top-0"
-      }
+      className={`ease-in-out sticky top-0 z-50 fade-in
+        ${navbar ? "bg-gray-500 " : "bg-opacity-0  "}`}
     >
       <div className="px-4 flex flex-wrap items-center justify-between max-full py-6 mx-auto max-w-7xl">
         <Link to="/">
