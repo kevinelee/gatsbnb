@@ -13,7 +13,7 @@ export default function MapContainer({ homes }) {
   };
 
   return (
-    <div className="sticky h-screen w-1/2" style={{ top: "0px" }}>
+    <div className="sticky h-screen w-1/2 hidden lg:block" style={{ top: "0px" }}>
       <LoadScript googleMapsApiKey={process.env.GATSBY_API_KEY}>
         <GoogleMap
           mapContainerStyle={mapStyles}
