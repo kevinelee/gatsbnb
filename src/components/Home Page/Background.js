@@ -3,7 +3,7 @@ import airbnb from "../../images/airbnb bg.png";
 
 export default function Background() {
   return (
-    <div>
+    <div className="top-0">
       <img className="w-full z-negative" src={airbnb} />
     </div>
   );

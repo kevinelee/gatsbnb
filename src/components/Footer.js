@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base text-black">
-            © 2021 Airbnb, Inc. All rights reserved &nbsp; ·{" "}
+            © 2021 Gatsbnb, Inc. All rights reserved &nbsp; ·{" "}
             <span className="mx-2 border-b-2 hover:border-black">Privacy</span> ·{" "}
             <span className="mx-2 border-b-2 hover:border-black">Terms</span> ·{" "}
             <span className="mx-2 border-b-2 hover:border-black">Sitemap</span>

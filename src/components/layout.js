@@ -7,8 +7,10 @@ import AboutFooter from "./AboutFooter";
 function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900">
-      <Header />
-      <div className="mx-auto">{children}</div>
+      <div className="relative">
+        <Header />
+        <div className="mx-auto">{children}</div>
+      </div>
       <AboutFooter />
       <Footer />
     </div>
