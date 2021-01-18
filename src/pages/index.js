@@ -19,7 +19,9 @@ function IndexPage() {
         ]}
         title="Home"
       />
+
       <Background />
+
       <LiveAnywhere />
       <ExperienceTheWorld />
       <JoinMillions />
